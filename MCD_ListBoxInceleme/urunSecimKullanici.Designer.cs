@@ -54,6 +54,7 @@ namespace MCD_ListBoxInceleme
             this.btnKapat.TabIndex = 1;
             this.btnKapat.Text = "X";
             this.btnKapat.UseVisualStyleBackColor = true;
+            this.btnKapat.Click += new System.EventHandler(this.btnKapat_Click);
             // 
             // flowLayoutPanel1
             // 
@@ -72,6 +73,7 @@ namespace MCD_ListBoxInceleme
             this.Controls.Add(this.label1);
             this.Name = "urunSecimKullanici";
             this.Text = "urunSecimKullanici";
+            this.Load += new System.EventHandler(this.urunSecimKullanici_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

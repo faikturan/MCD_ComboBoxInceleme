@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31829.152
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MCD_ComboBoxInceleme", "MCD_ComboBoxInceleme\MCD_ComboBoxInceleme.csproj", "{A195FB7B-2EDC-4DCC-8CE4-2125268F16E7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A195FB7B-2EDC-4DCC-8CE4-2125268F16E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A195FB7B-2EDC-4DCC-8CE4-2125268F16E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A195FB7B-2EDC-4DCC-8CE4-2125268F16E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A195FB7B-2EDC-4DCC-8CE4-2125268F16E7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CF1B13C8-79C5-4949-8622-475FE980B141}
+	EndGlobalSection
+EndGlobal

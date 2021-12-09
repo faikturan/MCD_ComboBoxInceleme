@@ -1,5 +1,5 @@
 ﻿
-namespace MCD_ComboBoxInceleme
+namespace MCD_ListBoxInceleme
 {
     partial class Form1
     {
@@ -29,8 +29,8 @@ namespace MCD_ComboBoxInceleme
         /// </summary>
         private void InitializeComponent()
         {
-            this.cmbUrunListe = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.lstUrunler = new System.Windows.Forms.ListBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.txtUrunAciklama = new System.Windows.Forms.TextBox();
             this.txtYazar = new System.Windows.Forms.TextBox();
@@ -47,24 +47,24 @@ namespace MCD_ComboBoxInceleme
             ((System.ComponentModel.ISupportInitialize)(this.pctUrunResim)).BeginInit();
             this.SuspendLayout();
             // 
-            // cmbUrunListe
-            // 
-            this.cmbUrunListe.FormattingEnabled = true;
-            this.cmbUrunListe.Location = new System.Drawing.Point(288, 88);
-            this.cmbUrunListe.Name = "cmbUrunListe";
-            this.cmbUrunListe.Size = new System.Drawing.Size(162, 21);
-            this.cmbUrunListe.TabIndex = 0;
-            this.cmbUrunListe.SelectedIndexChanged += new System.EventHandler(this.cmbUrunListe_SelectedIndexChanged);
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Tahoma", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label1.Location = new System.Drawing.Point(235, 9);
+            this.label1.Location = new System.Drawing.Point(218, 28);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(311, 58);
-            this.label1.TabIndex = 1;
+            this.label1.TabIndex = 2;
             this.label1.Text = "Ürün Listesi";
+            // 
+            // lstUrunler
+            // 
+            this.lstUrunler.FormattingEnabled = true;
+            this.lstUrunler.Location = new System.Drawing.Point(296, 89);
+            this.lstUrunler.Name = "lstUrunler";
+            this.lstUrunler.Size = new System.Drawing.Size(183, 95);
+            this.lstUrunler.TabIndex = 3;
+            this.lstUrunler.SelectedIndexChanged += new System.EventHandler(this.lstUrunler_SelectedIndexChanged);
             // 
             // groupBox1
             // 
@@ -80,10 +80,10 @@ namespace MCD_ComboBoxInceleme
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.groupBox1.Location = new System.Drawing.Point(53, 126);
+            this.groupBox1.Location = new System.Drawing.Point(34, 190);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(768, 346);
-            this.groupBox1.TabIndex = 2;
+            this.groupBox1.TabIndex = 4;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Seçilen ÜrünDetay Bilgisi";
             // 
@@ -186,12 +186,12 @@ namespace MCD_ComboBoxInceleme
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(873, 518);
+            this.ClientSize = new System.Drawing.Size(833, 565);
             this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.lstUrunler);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.cmbUrunListe);
             this.Name = "Form1";
-            this.Text = "ComboBox Inceleme";
+            this.Text = "ListBox Inceleme";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
@@ -203,20 +203,20 @@ namespace MCD_ComboBoxInceleme
 
         #endregion
 
-        private System.Windows.Forms.ComboBox cmbUrunListe;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ListBox lstUrunler;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.PictureBox pctUrunResim;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtUrunAciklama;
         private System.Windows.Forms.TextBox txtYazar;
         private System.Windows.Forms.TextBox txtUrunKategori;
         private System.Windows.Forms.TextBox txtStokAdet;
         private System.Windows.Forms.TextBox txtUrunAdi;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.PictureBox pctUrunResim;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
     }
 }
 

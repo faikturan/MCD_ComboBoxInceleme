@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MCD_ComboBoxInceleme
 {
-    class urun
+    public class urun
     {
         public int id { get; set; }
         public string urunResim { get; set; }

@@ -29,12 +29,58 @@ namespace MCD_ListBoxInceleme
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.label1 = new System.Windows.Forms.Label();
+            this.btnKapat = new System.Windows.Forms.Button();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.SuspendLayout();
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label1.Location = new System.Drawing.Point(85, 45);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(658, 18);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Birden fazla ürün seçimi yaptınız. Hangi ürünün detaylarını görüntülemek istiyors" +
+    "unuz?";
+            // 
+            // btnKapat
+            // 
+            this.btnKapat.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnKapat.Location = new System.Drawing.Point(357, 91);
+            this.btnKapat.Name = "btnKapat";
+            this.btnKapat.Size = new System.Drawing.Size(77, 42);
+            this.btnKapat.TabIndex = 1;
+            this.btnKapat.Text = "X";
+            this.btnKapat.UseVisualStyleBackColor = true;
+            // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(123, 153);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(579, 260);
+            this.flowLayoutPanel1.TabIndex = 2;
+            // 
+            // urunSecimKullanici
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.flowLayoutPanel1);
+            this.Controls.Add(this.btnKapat);
+            this.Controls.Add(this.label1);
+            this.Name = "urunSecimKullanici";
             this.Text = "urunSecimKullanici";
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
+
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnKapat;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
     }
 }

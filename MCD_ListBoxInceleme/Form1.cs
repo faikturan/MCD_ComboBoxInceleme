@@ -40,7 +40,22 @@ namespace MCD_ListBoxInceleme
 
         private void lstUrunler_SelectedIndexChanged(object sender, EventArgs e)
         {
+            int urunSecimAdet = lstUrunler.SelectedItems.Count;
+            if (urunSecimAdet == 1)
+            {
+                ListBox lbox = (ListBox)sender;
+                //lbox = sender as ListBox;
+                urun u1 = (urun)lbox.SelectedItem;
 
+                pctUrunResim.Image = Image.FromFile(u1.urunResim);
+                pctUrunResim.SizeMode = PictureBoxSizeMode.StretchImage;
+
+                txtUrunAdi.Text = u1.urunAdi;
+                txtUrunKategori.Text = u1.urunKategori;
+                txtStokAdet.Text = u1.stokAdet.ToString();
+                txtYazar.Text = u1.yazar;
+                txtUrunAciklama.Text = u1.aciklama;
+            }
         }
 
         
